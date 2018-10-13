@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- css-style to make elements look pretty -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- external javascript source file -->
+<script src="scripts.js"></script>
+
+
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="ingredients-input" placeholder="Ingredient Name">
+        <button id="add-ingredient" class="button pure-button" onclick="AddIngredient()">Add</button>
+
+        <br />
+        <br />
+
+        <h2>Ingredients You Have:</h2>
+        <table id="ingredient-list-section">
+            <tbody id="ingredient-list"></tbody>
+        </table>
+
+        <br />
+    
+        <button id="delete-button" hidden="hidden" onclick="DeleteIngredient()">Delete Ingredient</button>
+
+        <br />
+        <br />
+
+        <button id="submitIngredients" onclick="SubmitIngredients()">Submit Ingredients</button>
+
+        <br />
+        <br />
+
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        "Food Name"
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="FoodTableBody">
+            </tbody>
+        </table>
+
+    </body>
+
+</html>
