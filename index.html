@@ -11,42 +11,42 @@
 
 <html lang="en">
     <head>
-        <title>Meal Manager App </title>
+        <title>Meal Manager App</title>
     </head>
     <body>
+        <div>
+            <img src="images/Meal-Management-App-Logo.png" alt="Meal Manager App Logo" class="logocenter"/>
+        </div>
+        <hr />
         <input type="text" id="ingredients-input" placeholder="Ingredient Name">
         <button id="add-ingredient" class="button pure-button" onclick="AddIngredient()">Add</button>
 
         <br />
         <br />
 
-        <h2>Ingredients You Have:</h2>
+        <h3>Ingredients You Entered:</h3>
         <table id="ingredient-list-section">
             <tbody id="ingredient-list"></tbody>
         </table>
 
         <br />
-    
-        <button id="delete-button" hidden="hidden" onclick="DeleteIngredient()">Delete Ingredient</button>
 
-        <br />
-        <br />
+        <button id="delete-button" hidden="hidden" onclick="DeleteIngredient()">Delete Ingredient</button>
 
         <button id="submitIngredients" onclick="SubmitIngredients()">Submit Ingredients</button>
 
         <br />
         <br />
-
+        <hr />
         <table>
             <thead>
                 <tr>
                     <td>
-                        "Food Name"
+                        <h3>Recipes:</h3>
                     </td>
                 </tr>
             </thead>
-            <tbody id="FoodTableBody">
-            </tbody>
+            <tbody id="FoodTableBody"></tbody>
         </table>
 
     </body>

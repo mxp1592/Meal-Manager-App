@@ -9,3 +9,11 @@
     padding: 5px;
     cursor: pointer;
 }
+
+.logocenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}

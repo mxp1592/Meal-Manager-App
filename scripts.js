@@ -1,6 +1,7 @@
 //Input variables
 var currentList = [];
 var ingredient;
+
 //Click Add Ingredient button
 function AddIngredient()
 {
@@ -82,7 +83,7 @@ function SubmitIngredients()
     $("#FoodTableBody tr").remove();
     $.ajax(
     {
-        cache: false,
+        cache: false, //Accessing into the API
         url: "https://api.edamam.com/search?q=" + currentList.join(",") + "&app_id=9d10b7ba&app_key=d89e9b03886069bab9bac13fa8189398&from=0&to=100",
         success: function (data, textStatus, xhr)
         {
@@ -91,7 +92,7 @@ function SubmitIngredients()
             {
                 $("#FoodTableBody").append(
                     $('<tr>').append(
-                        $("<td>").append(x + ")" + array.hits[x].recipe.label + "\n")
+                        $("<td>").append(x + ") " + array.hits[x].recipe.label + "\n")
                     ).append(
                         $("<td>").append(array.hits[x].recipe.url)
                     )
