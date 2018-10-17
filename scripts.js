@@ -88,17 +88,24 @@ function SubmitIngredients()
         success: function (data, textStatus, xhr)
         {
             array = xhr.responseJSON;
-            for (var x = 0; x <= array.count; x++)
+         //   console.log(array);
+            for (var x = 0; x < array.hits.length; x++)
             {
+                //console.log("x: " + x);
                 $("#FoodTableBody").append(
                     $('<tr>').append(
-                        $("<td>").append(x + ") " + array.hits[x].recipe.label + "\n")  
+                        $("<td class=\"col-lg-4\">").append(x + ") " + array.hits[x].recipe.label + "\n")  
                     ).append(
-                        $("<td>").append(array.hits[x].recipe.url)  
+                        $("<td class=\"col-lg-4\">").append(
+                            $("<a>").attr("href", array.hits[x].recipe.url).attr("target", "_blank").append("Click me")
+                        )  
                     ).append(
-                        $("<td>").append(array.hits[x].recipe.image) 
+                        $("<td class=\"col-lg-4\">").append($("<img>").attr("src", array.hits[x].recipe.image)
                     )
-                );
+
+                        //
+                    
+                ));
             }
         }
     });

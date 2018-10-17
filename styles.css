@@ -10,6 +10,12 @@
     cursor: pointer;
 }
 
+#FoodTable
+{
+    border: 2px solid black;
+    margin: 50px 50px 50px 50px;
+}
+/* . is for a class, # is for a specific object ID */ 
 .logocenter
 {
     display: block;
