@@ -92,9 +92,11 @@ function SubmitIngredients()
             {
                 $("#FoodTableBody").append(
                     $('<tr>').append(
-                        $("<td>").append(x + ") " + array.hits[x].recipe.label + "\n")
+                        $("<td>").append(x + ") " + array.hits[x].recipe.label + "\n")  
                     ).append(
-                        $("<td>").append(array.hits[x].recipe.url)
+                        $("<td>").append(array.hits[x].recipe.url)  
+                    ).append(
+                        $("<td>").append(array.hits[x].recipe.image) 
                     )
                 );
             }
