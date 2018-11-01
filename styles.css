@@ -13,7 +13,8 @@
 #FoodTable
 {
     border: 2px solid black;
-    margin: 50px 50px 50px 50px;
+    margin: auto auto auto auto;
+    /*margin: 50px 50px 50px 50px;*/
 }
 /* . is for a class, # is for a specific object ID */ 
 .logocenter
