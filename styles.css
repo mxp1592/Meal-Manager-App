@@ -12,11 +12,46 @@
 
 #FoodTable
 {
-    border: 2px solid black;
-    margin: auto auto auto auto;
-    /*margin: 50px 50px 50px 50px;*/
+    margin: auto 10% auto 10%;
+    width: 80%;
 }
-/* . is for a class, # is for a specific object ID */ 
+
+#ingredient-list-section
+{
+    float: left;
+    margin: auto 10% auto 10%;
+    width: 20%;
+}
+
+#ingredientLabel
+{
+    float:left;
+    margin: auto auto auto 10%;
+}
+
+#ingredients-input
+{
+    margin-left: 10%;
+}
+
+/*Making the boxes around Allergies. Sources from w3schools*/
+fieldset
+{
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+}
+
+/* . is for a class, # is for a specific object ID */
 .logocenter
 {
     display: block;
@@ -24,9 +59,16 @@
     margin-right: auto;
     width: 10%;
 }
-tr, td
+tr
 {
     border: 2px solid black;
     text-align: center;
-    width: 300px;
+
+}
+
+td
+{
+    border: 2px solid black;
+    text-align: center;
+
 }

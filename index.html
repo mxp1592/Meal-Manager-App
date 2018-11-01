@@ -26,26 +26,51 @@
         <a href="./index.html"><img src="images/Meal-Management-App-Logo.png" alt="Meal Manager App Logo" class="logocenter" /></a>
     </div>
     <hr />
+
     <input type="text" id="ingredients-input" placeholder="Ingredient Name">
     <button id="add-ingredient" class="button pure-button" onclick="AddIngredient()">Add</button>
 
     <br />
     <br />
+    <h3 id="ingredientLabel" style="margin-left:10%;">Ingredients You've Entered:</h3>
+    <div class="row">
 
-    <h3>Ingredients You Entered:</h3>
-    <table id="ingredient-list-section">
-        <tbody id="ingredient-list"></tbody>
-    </table>
+        <table id="ingredient-list-section">
+            <tbody id="ingredient-list"></tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!--Making checking boxes for allergies-->
+    <div>
+        <fieldset style=" width: 20%; margin-left: 10%;">
+            <legend>Allergies</legend>
+            <input type="checkbox" name="allergy" value="peanut-free"> Peanut<br>
+            <input type="checkbox" name="allergy" value="tree-nut-free"> Tree-nut<br>
+            <input type="checkbox" name="allergy" value="alcohol-free"> Alcohol<br>
+        </fieldset>
+    </div>
+
+
 
     <br />
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3" style="margin-left: 14%;"><button id="submitIngredients" hidden="hidden" onclick="SubmitIngredients()"> Submit Ingredients</button></div>   <!--Location for submit button-->
+        <div class="col-lg-3" style="margin-left: -9%;"><button id="delete-button" hidden="hidden" onclick="DeleteIngredient()">Delete Ingredient</button></div> <!--Location for delete ingredient button-->
 
-    <button id="delete-button" hidden="hidden" onclick="DeleteIngredient()">Delete Ingredient</button>
+        <div class="col-lg-3"></div>
 
-    <button id="submitIngredients" onclick="SubmitIngredients()">Submit Ingredients</button>
+        <br />
 
-    <br />
+    </div>
+
     <br />
     <hr />
+
     <table id="FoodTable" class="col-lg-11">
         <thead>
             <tr>
