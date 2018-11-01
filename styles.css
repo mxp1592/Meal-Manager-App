@@ -23,3 +23,9 @@
     margin-right: auto;
     width: 10%;
 }
+tr, td
+{
+    border: 2px solid black;
+    text-align: center;
+    width: 300px;
+}
