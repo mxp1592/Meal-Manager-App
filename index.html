@@ -55,6 +55,35 @@
     </div>
 
 
+    <div>
+        <!--Filters for Protein, Carb, Fat-->
+        <fieldset style=" width: 20%; margin-left: 10%;">
+            <legend>Filters:</legend>
+            <input type="checkbox" name="filters" value="fats"> Fats
+            <select id="fatSelection">
+                <option>Less than</option>
+                <option>Greater than</option>
+            </select>
+            <input type="number" id="Fats" />
+            <br>
+            <input type="checkbox" name="filters" value="carbs"> Carbs
+            <select id="carbSelection">
+                <option>Less than</option>
+                <option>Greater than</option>
+            </select>
+            <input type="number" id="Carbs" />
+            <br>
+            <input type="checkbox" name="filters" value="proteins"> Proteins
+            <select id="proteinSelection">
+                <option>Less than</option>
+                <option>Greater than</option>
+            </select>
+            <input type="number" id="Proteins" />
+            <br>
+        </fieldset>
+    </div>
+
+
 
     <br />
     <div class="row">
@@ -85,10 +114,17 @@
                     </div>
                 </td>
                 <td>
+                    <!--Protein, Carb, Fat-->
+                    <div class="col-lg-11">
+                        <h3>Recipe Health Information:</h3>
+                    </div>
+                </td>
+                <td>
                     <div class="col-lg-11">
                         <h3>Recipe Image:</h3>
                     </div>
                 </td>
+
 
             </tr>
         </thead>
